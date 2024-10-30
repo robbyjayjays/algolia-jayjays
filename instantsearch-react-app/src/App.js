@@ -5,7 +5,9 @@ import Navbar from './components/Navbar';
 import Movies from './components/Movies';
 import './assets/css/Screen.css';
 
-const searchClient = algoliasearch('SB08EXFLZA', 'f1ca066eb8c4647bec98d399ffba71dc');
+const apiKey = process.env.REACT_APP_API_KEY;
+const apiId = process.env.REACT_APP_API_ID;
+const searchClient = algoliasearch(apiId, apiKey);
 
 const App = () => (
   <InstantSearch searchClient={searchClient} indexName="movie">
