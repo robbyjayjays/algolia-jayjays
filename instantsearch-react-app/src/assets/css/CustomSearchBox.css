@@ -6,6 +6,7 @@
   padding: 8px; /* Add padding for a larger look */
   border-radius: 8px; /* Add rounded corners */
   border: 1px solid #ccc;
+  text-align: right;
   /* Add other styles as needed */
 }
 

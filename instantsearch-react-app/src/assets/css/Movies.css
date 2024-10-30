@@ -13,7 +13,7 @@
     padding: 10px;
     margin-bottom: 20px; /* Add space between title and movie list */
     font-weight: bold;
-    font-size: 32px;
+    font-size: 20px;
   }
   
   .hit {
@@ -23,8 +23,8 @@
   }
   
   .hit-image {
-    width: 350px; /* Adjust image size */
-    height: 250px;
+    width: 150px; /* Adjust image size */
+    height: 100px;
     margin-right: 20px; /* Space between image and text */
   }
   
@@ -34,12 +34,12 @@
   
   .hit-content h2 {
     margin: 0; /* Remove default margin */
-    font-size: 1.5em; /* Adjust title font size */
+    font-size: 18px; /* Adjust title font size */
   }
   
   .hit-content p {
     margin-top: 10px; /* Space between title and overview */
     font-size: 1em; /* Adjust overview font size */
-    line-height: 1.4; /* Improve readability */
+    line-height: 14px; /* Improve readability */
   }
   

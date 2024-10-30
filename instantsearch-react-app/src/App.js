@@ -2,7 +2,6 @@ import React from 'react';
 import algoliasearch from 'algoliasearch/lite';
 import { InstantSearch } from 'react-instantsearch-dom';
 import Navbar from './components/Navbar';
-import Jayjays from './components/Jayjays';
 import Movies from './components/Movies';
 import './assets/css/Screen.css';
 
@@ -12,12 +11,7 @@ const App = () => (
   <InstantSearch searchClient={searchClient} indexName="movie">
     <Navbar />
     <div className="container">
-      <div className="left-side">
-        <Jayjays />
-      </div>
-      <div className="right-side">
-        <Movies />
-      </div>
+      <Movies />
     </div>
   </InstantSearch>
 );
