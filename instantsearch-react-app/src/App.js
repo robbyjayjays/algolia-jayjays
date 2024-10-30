@@ -12,7 +12,7 @@ const searchClient = algoliasearch(apiId, apiKey);
 const App = () => (
   <InstantSearch searchClient={searchClient} indexName="movie">
     <Navbar />
-    <div className="container">
+    <div className="containers">
       <Movies />
     </div>
   </InstantSearch>
