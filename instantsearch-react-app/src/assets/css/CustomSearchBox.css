@@ -1,0 +1,18 @@
+/* CustomSearchBox.css */
+.custom-search-box input{
+  width: 300px; /* Increase width */
+  height: 40px; /* Increase height */
+  font-size: 16px; /* Increase font size for readability */
+  padding: 8px; /* Add padding for a larger look */
+  border-radius: 8px; /* Add rounded corners */
+  border: 1px solid #ccc;
+  /* Add other styles as needed */
+}
+
+.custom-search-box button {
+  height: 40px; /* Match the height of the input */
+  font-size: 16px; /* Adjust icon size if needed */
+  padding: 8px;
+}
+
+  

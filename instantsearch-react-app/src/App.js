@@ -1,6 +1,7 @@
 import React from 'react';
 import algoliasearch from 'algoliasearch/lite';
-import { InstantSearch, SearchBox, Hits } from 'react-instantsearch-dom';
+import { InstantSearch, Hits } from 'react-instantsearch-dom';
+import Navbar from './components/Navbar';
 
 const searchClient = algoliasearch('SB08EXFLZA', 'f1ca066eb8c4647bec98d399ffba71dc');
 
@@ -14,7 +15,7 @@ const Hit = ({ hit }) => (
 
 const App = () => (
   <InstantSearch searchClient={searchClient} indexName="movie">
-    <SearchBox />
+    <Navbar />
     <Hits hitComponent={Hit}/>
   </InstantSearch>
 );
