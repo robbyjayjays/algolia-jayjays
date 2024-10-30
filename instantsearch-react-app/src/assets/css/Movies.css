@@ -1,0 +1,45 @@
+.right-side {
+    width: 100%; /* Take the other half of the screen */
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align to start to span full width */
+  }
+  
+  .MovieTitle {
+    width: 100%; /* Make the title span the full width of the right side */
+    text-align: center; /* Center the text */
+    background-color: #e0e0e0; /* Optional background color for title */
+    padding: 10px;
+    margin-bottom: 20px; /* Add space between title and movie list */
+    font-weight: bold;
+    font-size: 32px;
+  }
+  
+  .hit {
+    display: flex; /* Use flexbox to position items side by side */
+    align-items: flex-start; /* Align items at the top */
+    margin-bottom: 20px; /* Space between movie items */
+  }
+  
+  .hit-image {
+    width: 350px; /* Adjust image size */
+    height: 250px;
+    margin-right: 20px; /* Space between image and text */
+  }
+  
+  .hit-content {
+    flex: 1; /* Allow the text content to take up the remaining space */
+  }
+  
+  .hit-content h2 {
+    margin: 0; /* Remove default margin */
+    font-size: 1.5em; /* Adjust title font size */
+  }
+  
+  .hit-content p {
+    margin-top: 10px; /* Space between title and overview */
+    font-size: 1em; /* Adjust overview font size */
+    line-height: 1.4; /* Improve readability */
+  }
+  

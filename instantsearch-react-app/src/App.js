@@ -1,22 +1,24 @@
 import React from 'react';
 import algoliasearch from 'algoliasearch/lite';
-import { InstantSearch, Hits } from 'react-instantsearch-dom';
+import { InstantSearch } from 'react-instantsearch-dom';
 import Navbar from './components/Navbar';
+import Jayjays from './components/Jayjays';
+import Movies from './components/Movies';
+import './assets/css/Screen.css';
 
 const searchClient = algoliasearch('SB08EXFLZA', 'f1ca066eb8c4647bec98d399ffba71dc');
-
-const Hit = ({ hit }) => (
-  <div>
-    <img src={`https://image.tmdb.org/t/p/w500${hit.backdrop_path}`} alt={hit.title} />
-    <h2>{hit.title}</h2>
-    <p>{hit.overview}</p>
-  </div>
-);
 
 const App = () => (
   <InstantSearch searchClient={searchClient} indexName="movie">
     <Navbar />
-    <Hits hitComponent={Hit}/>
+    <div className="container">
+      <div className="left-side">
+        <Jayjays />
+      </div>
+      <div className="right-side">
+        <Movies />
+      </div>
+    </div>
   </InstantSearch>
 );
 
